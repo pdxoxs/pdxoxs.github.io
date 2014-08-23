@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sara Chesney | About</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,400italic,700,700italic,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-with, initial-scale=1.00">
+    </head>
+  <body>
+       <header>
+      <a href=index.html id="logo">
+          <h1>Sara Chesney</h1>
+          <h2>Website Portfolio</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="selected">Websites</a></li> 
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+     </header>
+    <div id="wrapper">
+  <section>
+       <p> This page is dedicated to websites and blogs that I have constructed. In addition to constructing the website you are on now, I have also had the chance to explore other online website and blog creators.</p>
+        <ul id=website-gallery>
+          <li>
+                <a href="http://portland-oregon.wix.com/architecture_interactive#!">
+                <img src="img/PAIP.png" alt="Portland Architecture Interactive Project"></a>
+                <p>WIX Website | Portland Architecture Interactive Project</p>
+            </li>
+            <li>
+                <a href="http://psuhandcycle.wix.com/handcycle#!about">
+                <img src="img/psu-hand-cycle.png" alt="Portland State University Hand Cycle"></a>
+                <p>WIX Website | Portland State University Hand-Cycle Senior Project</p>
+            </li> 
+            <li>
+                <a href="http://thinkertinkermaker.wordpress.com/">
+                <img src="img/ttm.png" alt="Thinker Tinker Maker"></a>
+                <p>Wordpress.com | Thinker Tinker Maker</p>
+          </li>
+          </ul>
+      </section>
+      <footer>
+        <p>&copy; 2014 Sara Chesney.</p>
+       <a href="http://twitter.com"><img src="Img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+       <a href="http://facebook.com"><img src="Img/facebook-wrap.png" alt="Facebook" class="social-icon"></a>
+      </footer>
+    </div>
+  </body>  
+</html>
