@@ -193,7 +193,7 @@ COLORS
 /* site body */
 body {
  background-color:#fff;
- color:#999;
+ color: #6d6a6a;
 }
 
 a {
@@ -205,10 +205,10 @@ a {
 #about a {
   color: #ff6600;
 }
-/* red header */
+/*header */
 header {
- background: #FFCC00;
- border-color: #006600;
+ background: #ff7f50;
+ border-color: #ff5a36;
 }
 /* logo text */
  h1, h2 {
@@ -216,18 +216,12 @@ header {
 }
 /* nav links */
 nav {
- background: #006600;
+ background: #ff5a36;
 }
 nav a, nav a:visited {
  color: #fff;
 }
 /* selected nav link */
 nav a.selected, nav a:hover {
- color: #ff6600;
+ color: #CE2029;
 } 
-
-
-
-
-
-
