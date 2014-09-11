@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GFO | Incident Form</title>
+	 <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="normalize.css">
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <form action="gfo_incident" method="post">
+	<h1>GFO Incident Report Form</h1>
+	<fieldset>
+  		<legend><span class="number">1. </span>Contact Information</legend>
+		<label for="date">Date of Incident:</label>
+		<input type="text" id="date" name="incident_date">
+		<label for="time">Time of Incident:</label>
+		<input type="text" id="time" name="incident_time">
+		<label for="name">Person(s) Reporting Incident:</label>
+		<input type="text" id="name" name="member_name">
+		<input type="text" id="optional" name="member_name" placeholder="(optional)" />
+		<label for="phone">Reporting Person's Phone #:</label>
+		<input type="text" id="phone" name="member_phone">
+		<label for="email">Reporting Person's Email:</label>
+		<input type="text" id="email" name="member_email">
+    </fieldset>
+    <fieldset>
+    <legend><span class="number">2. </span>The Incident</legend>
+	<label for="incident_nature">Nature of Incident</label>
+    <br>
+    <p>Please select your incident from the list below, if more than one incident that occurred, please mark the leading incident, and describe the other incidents as outcomes to the first.</p>
+	<select id="incident_nature" name="incident_nature">
+        <option value="incident_default">Select from incidents on list</option>
+        <optgroup label="Building Maintenance">
+          <option value="building_hc">Heating/Cooling</option>
+          <option value="building_electrical">Electrical</option>
+          <option value="building_door">Door Lock/Unlock</option>
+          <option value="building_water">Water Alarm</option>
+          <option value="building_vandal">Vandalism/Damage</option>
+          <option value="building_theft">Theft</option>
+          <option value="building_other">Other (Describe Below)</option>
+        </optgroup>
+        <optgroup label="Environmental">
+          <option value="environmental_flood">Flood</option>
+          <option value="environmental_water">Water Leak</option>
+          <option value="environmental_electric">Electrical</option>
+          <option value="environmental_pest">Pests</option>
+          <option value="environmental_accident">Accident/Illness</option>
+          <option value="environmental_patron">Patron Complaint</option>
+          <option value="environmental_other">Other (Describe Below)</option>
+        </optgroup>
+    </select>
+    
+    <br>
+    <label for="comment">Description of incident and action taken by RA</label>
+    <textarea id="comment" name="incident_description"></textarea>        
+</fieldset>
+    <field>
+    <label>Were Photographs Taken</label>
+    <input type="radio" id="photographs_yes" value="photographs_yes" name="photographs_taken"><label for="photographs_yes" class="light">Yes</label>
+    <input type="radio" id="photographs_no" value="photographs_no" name="photographs_taken"><label for="photographs_no" class="light">No</label>
+    <label>Are the photographs attached to form</label> 
+    <input type="radio" id="attached_yes" value="attached_yes" name="attached_taken"><label for="attached_yes" class="light">Yes</label>
+    <input type="radio" id="attached_no" value="attached_no" name="attached_taken"><label for="attached_no" class="light">No, sent to disaster@gfo.org</label>
+    <label for="number">Number of Photographs Taken:</label>
+		<input type="text" id="number" name="photographs_number">
+    </field>
+    <button type="submit">Submit Report</button>
+
+	</form>
+</body>
+</html>
